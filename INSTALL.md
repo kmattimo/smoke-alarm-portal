@@ -96,13 +96,12 @@ much difficulty to most other Unix-like operating systems.
         postgres=# \q
         $ exit       ### log out of postgres user; you should be yourself now
 
-        $ npm install sequelize
-
+        <!-- $ npm install sequelize
         ### This one needs to be available system-wide
         $ sudo npm install -g sequelize-cli 
 
         $ npm install pg-hstore
-        $ npm install pg
+        $ npm install pg -->
 
         ### Choose whatever env you want from config/config.json
         $ NODE_ENV="development" 

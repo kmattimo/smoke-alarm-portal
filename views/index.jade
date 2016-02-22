@@ -114,7 +114,7 @@ block content
                     button#singlebutton.btn.btn-primary(name='singlebutton') #{__("Submit")}
       #right.col-md-3
         p
-          | #{__('The American Red Cross and its partners have launched the Home Fire Campaign to reduce deaths and injuries caused by home fires by 25 percent over five years.')} #{__('The Red Cross asks every household in America to take two simple steps to help save lives: check or install smoke alarms and practice fire drills at home.')}
+          | #{__('The American Red Cross and its partners have launched the Home Fire Campaign to reduce deaths and injuries caused by home fires by 25 percent over five years.')} #{__('The Red Cross asks every household in America to take two simple steps to help save lives: check or install smoke alarms and practice fire drills at home.')} 
     #bottom.row
       p.availability.col-xs-12
         | #{__('This form can accept requests from the following States and Counties: IA (except Harrison, Mills and Pottawattamie Counties), IL, MN, MO, MT, ND, SD, WI, Dakota County, NE as well as all counties in ID (except Benewah, Bonner, Boundary, Kootenal and Shoshone Counties) and Malheur County, OR and Garfield and Asotin Counties in WA.')}
@@ -135,7 +135,7 @@ block content
     script(type="text/javascript").
       function setLocale(locale) { document.cookie= "locale=" + locale; location.reload(); }
       var locale = /locale=([^;]+)/.exec(document.cookie);
-      if (locale[1]) {
+      if (locale && locale.length >= 1 && locale[1]) {
         $("select#language-switcher").val(locale[1]);
       }
       $("select#state").addClass('state-not-yet-selected');
